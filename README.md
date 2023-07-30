@@ -8,5 +8,5 @@ Github account
 To clone/access the project use following command:
 **git clone https://github.com/shikander/ITunesSearchTest**
 
-To run all test execute following command in terminal
+To run all tests, execute following command in terminal:
 **mvn clean install**
