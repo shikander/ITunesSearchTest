@@ -3,6 +3,7 @@
     <test name="ITuneSearchAPITest">
         <classes>
             <class name="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" />
+            <class name="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" />
         </classes>
     </test>
 </suite>

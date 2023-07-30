@@ -1,4 +1,4 @@
-package com.apple.developer.itunes.search.api.request;
+package com.apple.developer.itunes.search.api.request.search;
 
 import lombok.Data;
 
@@ -11,4 +11,7 @@ public class ITunesSearch {
 
     private String entity;
     private String country;
+    private String media;
+    private String lang;
+
 }

@@ -7,6 +7,7 @@ public class EndPoints {
 
     private static final String environment = SetEnvironment.getEnvironment();
     private static final String envFile = "src/main/resources/configfiles/"+ environment +"/config.properties";
-    public static final String searchBaseUri = CommonUtils.getConfigProperty(envFile, "baseUri");
+    public static final String searchBaseUri = CommonUtils.getConfigProperty(envFile, "searchBaseUri");
+    public static final String lookupBaseUri = CommonUtils.getConfigProperty(envFile, "lookupBaseUri");
 
 }

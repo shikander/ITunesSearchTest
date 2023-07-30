@@ -1,9 +1,9 @@
 package com.apple.developer.itunes.search.api.test;
 
-import com.apple.developer.itunes.search.api.model.SearchModel;
-import com.apple.developer.itunes.search.api.request.ITunesSearch;
+import com.apple.developer.itunes.search.api.model.ITunesSearchModel;
+import com.apple.developer.itunes.search.api.request.search.ITunesSearch;
+import com.apple.developer.itunes.search.api.response.search.SearchResultsResponse;
 import com.apple.developer.itunes.search.util.ExcelUtils;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -13,21 +13,8 @@ import java.util.*;
 
 public class TestSearchAPIForParameterKeyTerm {
 
-    SearchModel searchModel = new SearchModel();
-
-    @DataProvider(name = "searchTermsData")
-    private Object[][] searchTermsData(){
-        return new Object[][] {{"jack"}, {"johnson"}, {"jack+johnson"}};
-    }
-
-    @Test(dataProvider = "searchTermsData")
-    public void testSearchWithTerm(String searchTerm){
-        Response searchResponse = searchModel.getSearchByTerm(searchTerm);
-
-        Assert.assertTrue(searchResponse.getStatusCode() == 200);
-        Assert.assertEquals(Integer.parseInt(searchResponse.getBody().jsonPath().get("resultCount").toString()),
-                searchResponse.getBody().jsonPath().getList("results").size());
-    }
+    ITunesSearchModel searchModel = new ITunesSearchModel();
+    private static int searchLimitCount = 51;
 
     @DataProvider(name = "iTunesSearchData")
     private Iterator<ITunesSearch> iTunesSearchIterator() throws IOException {
@@ -38,9 +25,11 @@ public class TestSearchAPIForParameterKeyTerm {
         for(LinkedHashMap<String,String> data : excelDataAsListOfMap) {
             ITunesSearch iTunesSearch = new ITunesSearch();
             iTunesSearch.setTerm(data.get("term"));
-            iTunesSearch.setEntity(data.get("entity"));
             iTunesSearch.setLimit(data.get("limit"));
+            iTunesSearch.setEntity(data.get("entity"));
             iTunesSearch.setCountry(data.get("country"));
+            iTunesSearch.setMedia(data.get("media"));
+            iTunesSearch.setLang(data.get("lang"));
             iTunesSearches.add(iTunesSearch);
         }
         return iTunesSearches.iterator();
@@ -50,13 +39,16 @@ public class TestSearchAPIForParameterKeyTerm {
     public void testSearchWithDifferentParams(ITunesSearch iTunesSearch) throws IOException {
         Map<String, Object> searchTermsMap =  new HashMap<>();
         searchTermsMap.put("term", iTunesSearch.getTerm());
-        searchTermsMap.put("entity", iTunesSearch.getEntity());
         searchTermsMap.put("limit", iTunesSearch.getLimit());
+        searchTermsMap.put("entity", iTunesSearch.getEntity());
         searchTermsMap.put("country", iTunesSearch.getCountry());
-        Response searchResponse = searchModel.getSearchByTerm(searchTermsMap);
+        searchTermsMap.put("media", iTunesSearch.getMedia());
+        searchTermsMap.put("lang", iTunesSearch.getLang());
 
-        Assert.assertTrue(searchResponse.getStatusCode() == 200);
-        Assert.assertEquals(Integer.parseInt(searchResponse.getBody().jsonPath().get("resultCount").toString()),
-                searchResponse.getBody().jsonPath().getList("results").size());
+        SearchResultsResponse searchResponse = searchModel.getSearchResultsByTerm(searchTermsMap);
+        Assert.assertTrue(searchResponse.getResultCount() < searchLimitCount);
+        Assert.assertTrue(searchResponse.getResults().size() < searchLimitCount);
+        Assert.assertTrue(searchResponse.getResultCount() == searchResponse.getResults().size());
+        Assert.assertTrue(searchModel.validateWrapperTypeInResponse(searchResponse));
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class SearchApiResponse {
+public class SearchResultsResponse {
 
     private Integer resultCount;
     private List<Result> results = new ArrayList<Result>();

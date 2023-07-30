@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="7.997" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="12.223" tests="23" errors="0" skipped="0" failures="3">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/test-classes:/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/classes:/Users/shikander.raja/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/shikander.raja/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/shikander.raja/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/shikander.raja/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured/5.3.1/rest-assured-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy/4.0.11/groovy-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-xml/4.0.11/groovy-xml-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/shikander.raja/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/shikander.raja/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/json-path/5.3.1/json-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-json/4.0.11/groovy-json-4.0.11.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured-common/5.3.1/rest-assured-common-5.3.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/xml-path/5.3.1/xml-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/shikander.raja/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok-maven-plugin/1.18.20.0/lombok-maven-plugin-1.18.20.0.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/shikander.raja/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/Users/shikander.raja/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/shikander.raja/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/shikander.raja/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/shikander.raja/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/shikander.raja/.m2/repository/net/datafaker/datafaker/1.8.0/datafaker-1.8.0.jar:/Users/shikander.raja/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/shikander.raja/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/shikander.raja/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/shikander.raja/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="java.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/test-classes:/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/classes:/Users/shikander.raja/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/shikander.raja/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/shikander.raja/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/shikander.raja/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured/5.3.1/rest-assured-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy/4.0.11/groovy-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-xml/4.0.11/groovy-xml-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/shikander.raja/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/shikander.raja/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/json-path/5.3.1/json-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-json/4.0.11/groovy-json-4.0.11.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured-common/5.3.1/rest-assured-common-5.3.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/xml-path/5.3.1/xml-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/shikander.raja/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok-maven-plugin/1.18.20.0/lombok-maven-plugin-1.18.20.0.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/shikander.raja/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/Users/shikander.raja/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/shikander.raja/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/shikander.raja/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/shikander.raja/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/shikander.raja/.m2/repository/net/datafaker/datafaker/1.8.0/datafaker-1.8.0.jar:/Users/shikander.raja/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/shikander.raja/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/shikander.raja/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/shikander.raja/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/shikander.raja/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.15.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/surefire/surefirebooter-20230730193722161_3.jar /Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/surefire 2023-07-30T19-37-22_006-jvmRun1 surefire-20230730193722161_1tmp surefire_0-20230730193722161_2tmp"/>
+    <property name="sun.java.command" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/surefire/surefirebooter-20230731003421826_3.jar /Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/surefire 2023-07-31T00-34-21_655-jvmRun1 surefire-20230731003421826_1tmp surefire_0-20230731003421826_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/test-classes:/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/classes:/Users/shikander.raja/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/shikander.raja/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/shikander.raja/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/shikander.raja/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured/5.3.1/rest-assured-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy/4.0.11/groovy-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-xml/4.0.11/groovy-xml-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/shikander.raja/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/shikander.raja/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/json-path/5.3.1/json-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-json/4.0.11/groovy-json-4.0.11.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured-common/5.3.1/rest-assured-common-5.3.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/xml-path/5.3.1/xml-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/shikander.raja/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok-maven-plugin/1.18.20.0/lombok-maven-plugin-1.18.20.0.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/shikander.raja/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/Users/shikander.raja/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/shikander.raja/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/shikander.raja/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/shikander.raja/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/shikander.raja/.m2/repository/net/datafaker/datafaker/1.8.0/datafaker-1.8.0.jar:/Users/shikander.raja/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/shikander.raja/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/shikander.raja/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/shikander.raja/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/test-classes:/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/classes:/Users/shikander.raja/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/shikander.raja/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/shikander.raja/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/shikander.raja/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured/5.3.1/rest-assured-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy/4.0.11/groovy-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-xml/4.0.11/groovy-xml-4.0.11.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/shikander.raja/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/shikander.raja/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/json-path/5.3.1/json-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/org/apache/groovy/groovy-json/4.0.11/groovy-json-4.0.11.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/rest-assured-common/5.3.1/rest-assured-common-5.3.1.jar:/Users/shikander.raja/.m2/repository/io/rest-assured/xml-path/5.3.1/xml-path-5.3.1.jar:/Users/shikander.raja/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/shikander.raja/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/shikander.raja/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok-maven-plugin/1.18.20.0/lombok-maven-plugin-1.18.20.0.jar:/Users/shikander.raja/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/shikander.raja/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/Users/shikander.raja/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/shikander.raja/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/shikander.raja/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/shikander.raja/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/shikander.raja/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/shikander.raja/.m2/repository/net/datafaker/datafaker/1.8.0/datafaker-1.8.0.jar:/Users/shikander.raja/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/shikander.raja/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/shikander.raja/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/shikander.raja/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/shikander.raja/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/shikander.raja/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/shikander.raja/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/shikander.raja"/>
     <property name="user.language" value="en"/>
@@ -26,13 +26,13 @@
     <property name="java.version.date" value="2022-04-19"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.15.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest"/>
+    <property name="basedir" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest/target/surefire/surefirebooter-20230730193722161_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/target/surefire/surefirebooter-20230731003421826_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+8-LTS-149"/>
     <property name="user.name" value="shikander.raja"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/yr/__25rmbj0lx66__rgj9x3ltxv1988q/T/"/>
     <property name="java.version" value="11.0.15"/>
-    <property name="user.dir" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/fs/ITunesSearchTest"/>
+    <property name="user.dir" value="/Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -58,167 +58,221 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testSearchWithTerm[jack](1)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="4.53">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?term=jack
-Proxy:			<none>
-Request params:	<none>
-Query params:	term=jack
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	term=jack
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=25, entity=, country=, media=movie, lang=)](1)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="5.203">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=25&term=jack%2Bjohnson&media=movie&lang=&entity=
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Cleaning up unclosed ZipFile for archive /Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/src/test/resources/testdata/SearchTermData.xlsx
 ]]></system-err>
   </testcase>
-  <testcase name="testSearchWithTerm[johnson](2)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.434">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?term=johnson
-Proxy:			<none>
-Request params:	<none>
-Query params:	term=johnson
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	term=johnson
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=podcast, lang=)](2)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.18">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=podcast&lang=&entity=
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchWithTerm[jack+johnson](3)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.23">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?term=jack%2Bjohnson
-Proxy:			<none>
-Request params:	<none>
-Query params:	term=jack+johnson
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	term=jack+johnson
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=music, lang=)](3)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.219">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=music&lang=&entity=
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=25, entity=, country=)](1)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.366">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?country=&limit=25&term=jack%2Bjohnson&entity=
-Proxy:			<none>
-Request params:	<none>
-Query params:	country=
-				limit=25
-				term=jack+johnson
-				entity=
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	country=
-				limit=25
-				term=jack+johnson
-				entity=
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=musicVideo, lang=)](4)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.125">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=musicVideo&lang=&entity=
 ]]></system-out>
-    <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=audiobook, lang=)](5)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.158">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=audiobook&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=shortFilm, lang=)](6)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.169">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm.testSearchWithDifferentParams(TestSearchAPIForParameterKeyTerm.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=shortFilm&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=tvShow, lang=)](7)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.138">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm.testSearchWithDifferentParams(TestSearchAPIForParameterKeyTerm.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=tvShow&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=software, lang=)](8)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.136">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=software&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=ebook, lang=)](9)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.192">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm.testSearchWithDifferentParams(TestSearchAPIForParameterKeyTerm.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=ebook&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=all, lang=)](10)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.327">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=all&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=ca, media=, lang=)](11)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.279">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=ca&limit=&term=jack%2Bjohnson&media=&lang=&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=yelp, limit=, entity=software, country=us, media=, lang=)](12)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.309">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=us&limit=&term=yelp&media=&lang=&entity=software
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=, lang=en_us)](13)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.168">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=&lang=en_us&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=, entity=, country=, media=, lang=ja_jp)](14)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.14">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/search?country=&limit=&term=jack%2Bjohnson&media=&lang=ja_jp&entity=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=909253, amgArtistId=, entity=, limit=, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](1)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.173">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=&isbn=&limit=&upc=&id=909253&sort=&entity=&amgVideoId=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=284910350, amgArtistId=, entity=, limit=, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](2)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.156">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=&isbn=&limit=&upc=&id=284910350&sort=&entity=&amgVideoId=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=468749, entity=, limit=, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](3)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.723">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=468749&isbn=&limit=&upc=&id=&sort=&entity=&amgVideoId=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=468749,5723, entity=, limit=, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](4)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.156">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=468749%2C5723&isbn=&limit=&upc=&id=&sort=&entity=&amgVideoId=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=909253, amgArtistId=, entity=album, limit=, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](5)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.204">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=&isbn=&limit=&upc=&id=909253&sort=&entity=album&amgVideoId=
+]]></system-out>
+    <system-err><![CDATA[Cleaning up unclosed ZipFile for archive /Users/shikander.raja/Documents/SCM_AUTOMATION/scm-platform/AjioB2C/srdemo/ITunesSearchTest/src/test/resources/testdata/SearchTermData.xlsx
 ]]></system-err>
   </testcase>
-  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jack+johnson, limit=25, entity=musicVideo, country=)](2)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.207">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?country=&limit=25&term=jack%2Bjohnson&entity=musicVideo
-Proxy:			<none>
-Request params:	<none>
-Query params:	country=
-				limit=25
-				term=jack+johnson
-				entity=musicVideo
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	country=
-				limit=25
-				term=jack+johnson
-				entity=musicVideo
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=68749,5723, entity=album, limit=5, sort=, upc=, amgAlbumId=, amgVideoId=, isbn=)](6)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.134">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=68749%2C5723&isbn=&limit=5&upc=&id=&sort=&entity=album&amgVideoId=
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=jim+jones, limit=25, entity=, country=ca)](3)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.208">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?country=ca&limit=25&term=jim%2Bjones&entity=
-Proxy:			<none>
-Request params:	<none>
-Query params:	country=ca
-				limit=25
-				term=jim+jones
-				entity=
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	country=ca
-				limit=25
-				term=jim+jones
-				entity=
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=468749,5723, entity=song, limit=5, sort=recent, upc=, amgAlbumId=, amgVideoId=, isbn=)](7)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.179">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=&amgArtistId=468749%2C5723&isbn=&limit=5&upc=&id=&sort=recent&entity=song&amgVideoId=
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchWithDifferentParams[ITunesSearch(term=yelp, limit=2, entity=software, country=us)](4)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyTerm" time="0.22">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://itunes.apple.com/search?country=us&limit=2&term=yelp&entity=software
-Proxy:			<none>
-Request params:	<none>
-Query params:	country=us
-				limit=2
-				term=yelp
-				entity=software
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request params:	<none>
-Query params:	country=us
-				limit=2
-				term=yelp
-				entity=software
-Form params:	<none>
-Path params:	<none>
-Multiparts:		<none>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=, entity=song, limit=, sort=, upc=720642462928, amgAlbumId=15175,15176,15177,15178,15183,15184,15187,1519,15191,15195,15197,15198, amgVideoId=, isbn=)](8)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.117">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=15175%2C15176%2C15177%2C15178%2C15183%2C15184%2C15187%2C1519%2C15191%2C15195%2C15197%2C15198&amgArtistId=&isbn=&limit=&upc=720642462928&id=&sort=&entity=song&amgVideoId=
+]]></system-out>
+  </testcase>
+  <testcase name="testLookupWithDifferentParams[ITunesLookup(id=, amgArtistId=, entity=, limit=, sort=, upc=, amgAlbumId=17120, amgVideoId=, isbn=)](9)" classname="com.apple.developer.itunes.search.api.test.TestSearchAPIForParameterKeyLookup" time="0.105">
+    <system-out><![CDATA[Request URI:	https://itunes.apple.com/lookup?amgAlbumId=17120&amgArtistId=&isbn=&limit=&upc=&id=&sort=&entity=&amgVideoId=
 ]]></system-out>
   </testcase>
 </testsuite>

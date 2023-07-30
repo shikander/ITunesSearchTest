@@ -10,3 +10,6 @@ To clone/access the project use following command:
 
 To run all tests, execute following command in terminal:
 **mvn clean install**
+
+To view the testng report navigate to the following location:
+**target/surefire-reports/emailable-report.html**

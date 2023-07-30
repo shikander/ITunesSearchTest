@@ -8,7 +8,7 @@ public class Result {
     private String wrapperType;
     private String kind;
     private Integer collectionId;
-    private Integer trackId;
+    private String trackId;
     private String artistName;
     private String collectionName;
     private String trackName;
