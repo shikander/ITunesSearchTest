@@ -1,15 +1,21 @@
 # ITunesSearchTest
 
-Pre-requisite:
+1. Pre-requisite:
 Java 11 or higher version
 Maven
 Github account
 
-To clone/access the project use following command:
+2. To clone/access the project use following command:
 **git clone https://github.com/shikander/ITunesSearchTest**
 
-To run all tests, execute following command in terminal:
+3. To run all tests, execute following command in terminal:
 **mvn clean install**
 
-To view the testng report navigate to the following location:
+4. To view the testng report navigate to the following location:
 **target/surefire-reports/emailable-report.html**
+
+5. To add more tests with different search term combination, update the sheet located in the following location
+   src/test/resources/testdata/SearchTermData.xlsx, sheet name - SEARCH_TERM
+
+6. To add more tests for lookup, update the sheet located in the following location
+   src/test/resources/testdata/SearchTermData.xlsx, sheet name - LOOKUP_TERM
