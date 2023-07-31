@@ -5,11 +5,16 @@ import com.apple.developer.itunes.search.api.request.lookup.ITunesLookup;
 import com.apple.developer.itunes.search.api.response.lookup.LookupResultsResponse;
 import com.apple.developer.itunes.search.api.response.search.SearchResultsResponse;
 import com.apple.developer.itunes.search.util.ExcelUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.yaml.snakeyaml.Yaml;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 public class TestSearchAPIForParameterKeyLookup {
@@ -52,8 +57,9 @@ public class TestSearchAPIForParameterKeyLookup {
         lookupTermsMap.put("isbn", iTunesLookup.getIsbn());
 
         LookupResultsResponse lookupResultsResponse = lookupModel.getLookupResultsByTerm(lookupTermsMap);
-        Assert.assertTrue(lookupResultsResponse != null);
-        Assert.assertTrue(lookupResultsResponse.getResultCount() == lookupResultsResponse.getResults().size());
-        Assert.assertTrue(lookupModel.validateWrapperTypeInResponse(lookupResultsResponse));
+        lookupModel.validateLookupResultsCount(lookupResultsResponse);
+        lookupModel.validateWrapperTypeInResponse(lookupResultsResponse);
+        lookupModel.validateExplicitnessInResponse(lookupResultsResponse);
+        lookupModel.validateArtistNameInResponse(lookupResultsResponse);
     }
 }

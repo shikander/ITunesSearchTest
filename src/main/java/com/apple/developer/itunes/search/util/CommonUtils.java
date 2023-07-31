@@ -2,10 +2,10 @@ package com.apple.developer.itunes.search.util;
 
 import com.apple.developer.itunes.search.api.environment.Environment;
 import net.datafaker.Faker;
+import org.yaml.snakeyaml.Yaml;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.HashMap;
 import java.util.Properties;
 
 public class CommonUtils {
@@ -26,5 +26,18 @@ public class CommonUtils {
             e.getStackTrace();
         }
         return configProperties.getProperty(configValue);
+    }
+
+    public static String getDataFromYamlFile(String file, String key) {
+        String value = "";
+        try {
+            Yaml yaml = new Yaml();
+            InputStream inputStream = new FileInputStream(file);
+            HashMap yamlMap = yaml.load(inputStream);
+            value = yamlMap.get(key).toString().replaceAll("\\[", "").replaceAll("\\]","");
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+        return value;
     }
 }

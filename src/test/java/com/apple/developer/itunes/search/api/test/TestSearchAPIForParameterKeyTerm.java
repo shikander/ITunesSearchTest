@@ -4,7 +4,6 @@ import com.apple.developer.itunes.search.api.model.ITunesSearchModel;
 import com.apple.developer.itunes.search.api.request.search.ITunesSearch;
 import com.apple.developer.itunes.search.api.response.search.SearchResultsResponse;
 import com.apple.developer.itunes.search.util.ExcelUtils;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -14,7 +13,6 @@ import java.util.*;
 public class TestSearchAPIForParameterKeyTerm {
 
     ITunesSearchModel searchModel = new ITunesSearchModel();
-    private static int searchLimitCount = 51;
 
     @DataProvider(name = "iTunesSearchData")
     private Iterator<ITunesSearch> iTunesSearchIterator() throws IOException {
@@ -46,9 +44,8 @@ public class TestSearchAPIForParameterKeyTerm {
         searchTermsMap.put("lang", iTunesSearch.getLang());
 
         SearchResultsResponse searchResponse = searchModel.getSearchResultsByTerm(searchTermsMap);
-        Assert.assertTrue(searchResponse.getResultCount() < searchLimitCount);
-        Assert.assertTrue(searchResponse.getResults().size() < searchLimitCount);
-        Assert.assertTrue(searchResponse.getResultCount() == searchResponse.getResults().size());
-        Assert.assertTrue(searchModel.validateWrapperTypeInResponse(searchResponse));
+        searchModel.validateResultsCount(searchResponse);
+        searchModel.validateWrapperTypeInResponse(searchResponse);
+        searchModel.validateKindResultKeyInResponse(searchResponse);
     }
 }

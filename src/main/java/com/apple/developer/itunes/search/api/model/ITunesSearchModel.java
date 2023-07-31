@@ -3,15 +3,19 @@ package com.apple.developer.itunes.search.api.model;
 import com.apple.developer.itunes.search.api.WebServiceCall;
 import com.apple.developer.itunes.search.api.constants.EndPoints;
 import com.apple.developer.itunes.search.api.response.search.SearchResultsResponse;
+import com.apple.developer.itunes.search.util.CommonUtils;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.StringUtils;
 import org.json.simple.JSONObject;
+import org.junit.Assert;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class ITunesSearchModel {
+
+    private static String searchResultsData = "src/test/resources/testdata/SearchExpectedData.yaml";
+    private static int searchLimitCount = 51;
 
     public Response getSearchByTerm(Object value2){
         return WebServiceCall.doGetCallWithQueryParam(EndPoints.searchBaseUri, "term", value2);
@@ -27,23 +31,40 @@ public class ITunesSearchModel {
         return searchResultsResponse;
     }
 
-    public boolean validateWrapperTypeInResponse(SearchResultsResponse searchResponse){
-        String[] wrapperTypeArr = new String[]{"track", "audiobook", "software"};
-        Boolean isWrapperSame = false;
-        for (int i=0; i< searchResponse.getResults().size(); i++){
-            if(searchResponse.getResults().get(i).getWrapperType() != null)
-                isWrapperSame = StringUtils.indexOfAny(searchResponse.getResults().get(i).getWrapperType(), wrapperTypeArr)==0;
-        }
-        return isWrapperSame;
+    public void validateResultsCount(SearchResultsResponse searchResponse){
+        Assert.assertTrue(searchResponse.getResultCount() < searchLimitCount);
+        Assert.assertTrue(searchResponse.getResults().size() < searchLimitCount);
+        Assert.assertTrue(searchResponse.getResultCount() == searchResponse.getResults().size());
     }
 
-    public boolean validateArtistNameInResponse(SearchResultsResponse searchResponse){
-        String[] artistNameArr = new String[]{"Jack Johnson"};
-        Boolean isWrapperSame = false;
-        for (int i=0; i< searchResponse.getResults().size(); i++){
-            if(searchResponse.getResults().get(i).getWrapperType() != null)
-                isWrapperSame = StringUtils.indexOfAny(searchResponse.getResults().get(i).getArtistName(), artistNameArr)==0;
+    public void validateWrapperTypeInResponse(SearchResultsResponse searchResponse){
+        String wrapperType = CommonUtils.getDataFromYamlFile(searchResultsData, "WrapperType");
+        if(searchResponse.getResults().size() > 0){
+            for (int i=0; i< searchResponse.getResults().size(); i++){
+                if(searchResponse.getResults().get(i).getWrapperType() != null)
+                    Assert.assertTrue(StringUtils.indexOfAny(searchResponse.getResults().get(i).getWrapperType(), wrapperType)==0);
+                else
+                    Assert.assertFalse( "WrapperType " + wrapperType +" is not available for this search ", false);
+            }
         }
-        return isWrapperSame;
+        else {
+            Assert.assertTrue(searchResponse.getResults().size() == 0);
+        }
     }
+
+    public void validateKindResultKeyInResponse(SearchResultsResponse searchResponse){
+        String kind = CommonUtils.getDataFromYamlFile(searchResultsData, "Kind");
+        if(searchResponse.getResults().size() > 0){
+            for (int i=0; i< searchResponse.getResults().size(); i++){
+                if(searchResponse.getResults().get(i).getKind() != null)
+                    Assert.assertTrue(StringUtils.indexOfAny(searchResponse.getResults().get(i).getKind(), kind)==0);
+                else
+                    Assert.assertFalse( "Kind result " + kind + " is not available for this search ", false);
+            }
+        }else {
+            Assert.assertTrue(searchResponse.getResults().size() == 0);
+        }
+    }
+
+
 }

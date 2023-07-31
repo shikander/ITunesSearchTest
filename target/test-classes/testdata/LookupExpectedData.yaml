@@ -1,0 +1,4 @@
+WrapperType: ["artist", "collection", "software", "track"]
+Explicitness: ["notExplicit", "explicit"]
+ArtistNames: ["John Craigie", "Jack Johnson", "Yelp", "U2", "Pianosaurus", "Wilson Pickett", "Weezer", "Rush", "Michael Connelly", "Zach Gill & Jack Johnson", "Milky Chance & Jack Johnson", "John Craigie", "Jack Johnson & Lee \"Scratch\" Perry", "Manuel Garcia, Silvia Tómas, Jack Johnson & Paula Fuga", "Ted Lennon", "Paula Fuga, Jack Johnson & Ben Harper"]
+CollectionNames: ["Groovy Neighborhood", "Hey Jude", "Weezer", "Weezer (Deluxe Edition)"]
